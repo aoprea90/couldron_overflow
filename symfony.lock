@@ -14,11 +14,17 @@
     "doctrine/lexer": {
         "version": "1.2.0"
     },
+    "knplabs/knp-markdown-bundle": {
+        "version": "1.8.1"
+    },
+    "michelf/php-markdown": {
+        "version": "1.9.0"
+    },
     "monolog/monolog": {
         "version": "2.0.2"
     },
     "php": {
-        "version": "7.2.5"
+        "version": "7.3"
     },
     "psr/cache": {
         "version": "1.0.1"
