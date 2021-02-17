@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Service\MarkdownHelper;
 use Knp\Bundle\MarkdownBundle\MarkdownParserInterface;
 use Psr\Log\LoggerInterface;
+use Sentry\State\HubInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Contracts\Cache\CacheInterface;
@@ -45,8 +46,6 @@ class QuestionController extends AbstractController
         if ($this->isDebug) {
             $this->logger->info('We are in debug mode');
         }
-
-        throw new \Exception('bad stuff happened!');
 
         $answers = [
             'Make sure your cat is sitting `purrrfectly` still 🤣',
